@@ -27,32 +27,56 @@ class App extends Component {
             borderBottomLeftRadius: this.state.bottomLeft + "px",
             borderBottomRightRadius: this.state.bottomRight + "px"
           }}
-        />
+        >
+          <div id="code-container">
+            <code>
+              #box {
+
+              }
+            </code>
+          </div>
+        </div>
         <div id="input-container">
-          <input
-            id="top-left"
-            type="number"
-            value={this.state.topLeft}
-            onChange={this.handleTopLeftInputChange}
-          />
-          <input
-            id="top-right"
-            type="number"
-            value={this.state.topRight}
-            onChange={this.handleTopRightInputChange}
-          />
-          <input
-            id="bottom-left"
-            type="number"
-            value={this.state.bottomLeft}
-            onChange={this.handleBottomLeftInputChange}
-          />
-          <input
-            id="bottom-right"
-            type="number"
-            value={this.state.bottomRight}
-            onChange={this.handleBottomRightInputChange}
-          />
+          <p>
+            Top-left:{" "}
+            <input
+              id="top-left"
+              type="number"
+              value={this.state.topLeft}
+              onChange={this.handleTopLeftInputChange}
+            />
+              {" "}px
+          </p>
+          <p>
+            Top-right:{" "}
+            <input
+              id="top-right"
+              type="number"
+              value={this.state.topRight}
+              onChange={this.handleTopRightInputChange}
+            />
+            {" "}px
+          </p>
+          <p>
+            Bottom-left:{" "}
+            <input
+              id="bottom-left"
+              type="number"
+              value={this.state.bottomLeft}
+              onChange={this.handleBottomLeftInputChange}
+            />
+            {" "}px
+          </p>
+          <p>
+            Bottom-right:{" "}
+            <input
+              id="bottom-right"
+              type="number"
+              value={this.state.bottomRight}
+              onChange={this.handleBottomRightInputChange}
+            />
+            {" "}px
+          </p>
         </div>
       </div>
     );
