@@ -30,9 +30,30 @@ class App extends Component {
         >
           <div id="code-container">
             <code>
-              #box {
-
-              }
+              <p>#box {"{"}</p>
+              <p>
+                <pre>
+                  border-top-left-radius: <span>{this.state.topLeft}px;</span>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  border-top-right-radius: <span>{this.state.topRight}px;</span>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  border-bottom-left-radius:{" "}
+                  <span>{this.state.bottomLeft}px;</span>
+                </pre>
+              </p>
+              <p>
+                <pre>
+                  border-bottom-right-radius:{" "}
+                  <span>{this.state.bottomRight}px;</span>
+                </pre>
+              </p>
+              <p>{"}"}</p>
             </code>
           </div>
         </div>
@@ -44,8 +65,8 @@ class App extends Component {
               type="number"
               value={this.state.topLeft}
               onChange={this.handleTopLeftInputChange}
-            />
-              {" "}px
+            />{" "}
+            px
           </p>
           <p>
             Top-right:{" "}
@@ -54,8 +75,8 @@ class App extends Component {
               type="number"
               value={this.state.topRight}
               onChange={this.handleTopRightInputChange}
-            />
-            {" "}px
+            />{" "}
+            px
           </p>
           <p>
             Bottom-left:{" "}
@@ -64,8 +85,8 @@ class App extends Component {
               type="number"
               value={this.state.bottomLeft}
               onChange={this.handleBottomLeftInputChange}
-            />
-            {" "}px
+            />{" "}
+            px
           </p>
           <p>
             Bottom-right:{" "}
@@ -74,8 +95,8 @@ class App extends Component {
               type="number"
               value={this.state.bottomRight}
               onChange={this.handleBottomRightInputChange}
-            />
-            {" "}px
+            />{" "}
+            px
           </p>
         </div>
       </div>
